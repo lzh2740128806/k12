@@ -1,0 +1,1 @@
+!function(){function e(){var e=window.innerWidth;e>767&&$("li.dropdown").hover(function(){$(this).addClass("open")},function(){$(this).removeClass("open")})}e(),window.addEventListener("resize",e,!1)}(),$(window).scroll(function(){var e=$(this).scrollTop();e?$(".header").addClass("header-temp"):$(".header").removeClass("header-temp")});
