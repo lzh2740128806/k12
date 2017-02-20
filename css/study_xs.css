@@ -1,0 +1,97 @@
+.banner {
+  background: url(../imgs/study/bg_coop_new2.jpg) no-repeat center;
+  overflow: hidden;
+  color: #fff;
+  padding-bottom: 150px;
+  background-size: cover;
+}
+.banner h2 {
+  margin: 180px 0 50px 10%;
+}
+.banner p {
+  margin-left: 10%;
+  width: 30%;
+  line-height: 2;
+}
+.cooperate {
+  overflow: hidden;
+}
+.cooperate .wrap {
+  margin: 100px auto;
+  padding: 0;
+  width: 66%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.cooperate .wrap img {
+  margin: 0 auto;
+}
+.cooperate .wrap span {
+  display: block;
+  margin: 10px 0;
+  font-size: 16px;
+  color: #379fff;
+}
+.cooperate .wrap p {
+  color: #777;
+}
+.cooperate .wrap li {
+  margin-bottom: 20px;
+}
+.cooperate .wrap .list1 {
+  width: 200px;
+}
+.cooperate .wrap .list2 {
+  width: 300px;
+}
+.team {
+  padding-bottom: 150px;
+  background-color: #f6f6f6;
+}
+.team h2 {
+  padding: 100px 0 50px;
+}
+.team .wrapper {
+  width: 80%;
+}
+.team .wrapper ul {
+  float: left;
+  width: 40%;
+}
+.item {
+  background-color: #fafafa;
+}
+.item h2 {
+  margin: 0;
+  padding: 100px 0 50px;
+}
+@media (max-width: 768px) {
+  .banner h2 {
+    margin-top: 100px;
+    font-size: 25px;
+  }
+  .banner p {
+    margin: 0;
+    padding: 0 10%;
+    width: 100%;
+  }
+  .team {
+    padding-bottom: 50px;
+  }
+  .team h2 {
+    font-size: 25px;
+  }
+  .team .wrapper {
+    width: 100%;
+  }
+  .team .wrapper ul {
+    padding: 0 10%;
+    width: 100%;
+  }
+  .item h2 {
+    padding: 50px 0;
+    font-size: 25px;
+  }
+}

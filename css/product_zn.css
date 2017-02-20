@@ -1,0 +1,125 @@
+::-webkit-scrollbar {
+  width: 0;
+}
+section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.page1 {
+  background: url(../imgs/product/cen_robot_1.jpg) no-repeat;
+  background-size: cover;
+}
+.page1 img {
+  position: absolute;
+  opacity: 0;
+}
+.page1 .p1-img1 {
+  top: 50%;
+  transform: translateY(-50%);
+  left: -10%;
+  transition: all 1s;
+  z-index: 10;
+}
+.page1 .p1-box {
+  position: absolute;
+  width: 16%;
+  height: 60%;
+  right: -10%;
+  transition: all 1s;
+}
+.page1 .p1-box img {
+  width: 100%;
+}
+@keyframes mouth {
+  0% {
+    top: 20%;
+    opacity: 1;
+  }
+  100% {
+    top: 2%;
+    opacity: 0;
+  }
+}
+.page1 .p1-box .p1-img3 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  animation: mouth 1s linear 1s 3 alternate;
+  animation-fill-mode: backwards;
+}
+.page1 .p1-box .p1-img4 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 5%;
+  width: 46%;
+  transition: all 1s linear 4s;
+}
+.page2 img {
+  top: 100px;
+  position: absolute;
+  width: 36%;
+}
+.page2 .p2-img1 {
+  left: 10%;
+}
+.page2 .p2-img2 {
+  right: -30%;
+  transition: all 1s linear;
+  z-index: 2;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.page2 .p2-img3 {
+  opacity: 0;
+  right: 15%;
+  z-index: 3;
+}
+.page-on .p1-img1 {
+  left: 10%;
+  opacity: 1;
+}
+.page-on .p1-box {
+  right: 20%;
+  top: 15%;
+}
+.page-on .p1-box .p1-img2,
+.page-on .p1-box .p1-img4 {
+  opacity: 1;
+}
+.page-on .p2-img2 {
+  right: 15%;
+}
+.page-on .p2-img3 {
+  animation: blink 3s linear 1s infinite alternate;
+}
+.page-list {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.page-list li {
+  margin: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.page-list li:first-child {
+  background-color: #379fff;
+}

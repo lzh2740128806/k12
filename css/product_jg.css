@@ -1,0 +1,81 @@
+::-webkit-scrollbar {
+  width: 0;
+}
+section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.page1 {
+  background: url(../imgs/product/cen_projector_1.jpg) no-repeat;
+  background-size: cover;
+}
+.page1 .p1-img1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%;
+  width: 50%;
+  opacity: 0;
+  transition: all 1s;
+  z-index: 3;
+}
+.page1 .p1-img2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+}
+.page2 img {
+  top: 100px;
+  position: absolute;
+}
+.page2 .p2-img1 {
+  left: 10%;
+}
+.page2 .p2-img2 {
+  right: -30%;
+  width: 50%;
+  transition: all 1s linear;
+  z-index: 3;
+}
+.page2 .p2-img3 {
+  right: 0;
+  top: 180px;
+  width: 50%;
+  transform: scale(0);
+  transition: all 1s linear 1s;
+  z-index: 2;
+}
+.page-on .p1-img1 {
+  top: 100px;
+  opacity: 1;
+}
+.page-on .p2-img2 {
+  right: 2%;
+}
+.page-on .p2-img3 {
+  transform: scale(1);
+}
+.page-list {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.page-list li {
+  margin: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.page-list li:first-child {
+  background-color: #379fff;
+}

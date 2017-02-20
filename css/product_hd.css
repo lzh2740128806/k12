@@ -1,0 +1,73 @@
+.banner {
+  position: relative;
+}
+.banner .b-text {
+  position: absolute;
+  top: 100px;
+  left: 10%;
+  width: 40%;
+}
+.banner .b-text h2 {
+  font-size: 30px;
+}
+.banner .b-text span {
+  display: block;
+  margin: 20px 0;
+  font-size: 20px;
+}
+.banner .b-text p {
+  line-height: 2;
+}
+.advance {
+  text-align: center;
+  padding: 100px 0 150px;
+}
+.advance ul {
+  padding-top: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+}
+.advance ul li {
+  position: relative;
+  padding: 100px 0 30px;
+  margin: 50px 0;
+  line-height: 30px;
+  width: 200px;
+  background-color: #379fff;
+  color: #fff;
+  border-radius: 5px;
+}
+.advance ul li img {
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 992px) and (min-width: 768px) {
+  .banner .b-text {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .banner .b-text {
+    top: 50px;
+    width: 70%;
+  }
+  .banner .b-text h2 {
+    font-size: 20px;
+  }
+  .banner .b-text span {
+    font-size: 15px;
+  }
+}
+@media (max-width: 560px) {
+  .banner .b-text span {
+    font-size: 14px;
+  }
+  .banner .b-text p {
+    display: none;
+  }
+}

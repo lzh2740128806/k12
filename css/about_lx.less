@@ -1,0 +1,84 @@
+.contact{
+	padding-top: 100px;
+	text-align: center;
+	h2{
+		margin: 30px 0;
+		color: #379fff;
+	}
+	p span{color: #379fff;}
+	form{
+		margin: 0 auto;
+		text-align: left;
+		width: 60%;
+		font-size: 14px;
+		input[type=text]{
+			margin-top: 20px;
+			width: 300px;
+			height: 40px;
+			padding-left: 100px;
+		}
+		label{font-weight: 500;}
+		.usermsg{
+			position: relative;
+			display: flex;
+			justify-content:space-between;
+			flex-wrap:wrap;
+			.name,.phone{
+				position: relative;
+				width: 300px;
+				label{
+					position: absolute;
+					top: 20px;
+					left: 20px;
+					line-height: 40px;
+					font-weight: 500;
+				}
+			}
+		}
+		.choose{
+			margin: 10px auto;
+			input{margin-left: 3%;}
+		}
+		.leavemsg{
+			position: relative;
+			display: flex;
+			justify-content:space-between;
+			label{
+				position: absolute;
+				left: 1em;
+				line-height: 2;
+			}
+			textarea{
+				padding: 1em;
+				padding-top: 2em;
+				width: 100%;
+				height: 200px;
+			}
+		}
+		.btn{
+			margin-top: 20px;
+			background-color: #379fff;
+		}
+	}
+}
+.address{
+	position: relative;
+	.address-msg{
+		position: absolute;
+		background: #379fff;
+		top: 0;
+		color: #fff;
+		z-index: 5;
+	}
+	#allmap{
+		margin-top: 50px;
+		width: 100%;
+		height: 600px;
+	}
+}
+@media (max-width:992px) and (min-width:768px){
+	.contact form{width: 80%;}
+}
+@media (max-width:768px){
+	.contact form{width: 100%;}
+}

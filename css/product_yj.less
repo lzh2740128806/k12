@@ -1,0 +1,275 @@
+::-webkit-scrollbar{
+	width:0;
+}
+section{
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+}
+.center{
+	position: absolute;
+	left: 50%;
+	transform:translateX(-50%);
+}
+.page1{
+	.p1-img1{
+		.center;
+		top: 300px;
+		opacity: 0;
+		z-index: 2;
+		transition:all 1s;
+	}
+	.p1-img2{
+		.center;
+		bottom: 0;
+		left: 120%;
+		width: 120%;
+		opacity: 0;
+		transition:all 1s ease-out .5s;
+	}
+}
+.page2{
+	position: relative;
+	background: url(../imgs/product/2bg.jpg) no-repeat center top;
+	background-size: 100% 100%;
+	transition:all 1s linear 2s;
+	.p2-img1{
+		.center;
+		top: 300px;
+		opacity: 1;
+		transition:all 2s ease-out;
+	}
+	.p2-img2{
+		.center;
+		top: 50%;
+		transition:all 2.5s cubic-bezier(0.3, 1, 0.7, 0) .5s;
+	}
+	.p2-img3{
+		.center;
+		bottom: -30%;
+		transition:all 1s linear 2s;
+	}
+}
+.page3{
+	background-color: #f8f8f8;
+	.p3-img1{
+		.center;
+		top: 300px;
+		opacity: 0;
+		transition:all .5s linear 1s;
+	}
+	.p3-box{
+		.center;
+		top: 250px;
+		display: flex;
+		width: 50%;
+		justify-content:space-around;
+		img{
+			position: relative;
+			top: 500px;
+			width: 15%;
+			height: 100%;
+			transition-property:all;
+			transition-duration:200ms;
+		}
+		.pi-1{transition-delay:1.5s;}
+		.pi-2{transition-delay:1.6s;}
+		.pi-3{transition-delay:1.7s;}
+		.pi-4{transition-delay:1.8s;}
+		.pi-5{transition-delay:1.9s;}
+	}
+	.p3-img2{
+		.center;
+		bottom: -40%;
+		opacity: 0;
+		transition:all 2s;
+	}
+}
+.page4{
+	.col-sm-6{
+		padding: 0;
+		margin: 0;
+		position: relative;
+		height: 100vh;
+		overflow: hidden;
+	}
+	.p4-img1,.p4-img2,.p4-img3{
+		.center;
+		opacity: 0;
+	}
+	.p4-img1{
+		top: 0;
+		transition:all .5s linear 1s;
+	}
+	.p4-img2{
+		top: 450px;
+		transition:all .5s linear 1.5s;
+	}
+	.p4-img3{
+		left: 0;
+		bottom: -40%;
+		transition:all 1.5s ease-out;
+	}
+	.photo{
+		position: absolute;
+		padding: 0;
+		li{
+			float: left;
+			width: 50vw;
+		}
+	}
+	.photo-list{
+		.center;
+		bottom: 0;
+		li{
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			border-radius: 50%;
+			background-color: #ccc;
+			cursor: pointer;
+			&:first-child{
+				background-color: #fff;
+			}
+		}
+	}
+}
+.page5{
+	.col-sm-6{
+		.page4 .col-sm-6;
+	}
+	.p5-img2{
+		position: absolute;
+		top: 0;
+		opacity: 0;
+		transition:all 100ms linear 2s;
+	}
+	.p5-img3,.p5-img4{
+		.center;
+		opacity: 0;
+	}
+	.p5-img3{
+		top: -100px;
+		transition:all 1.5s;
+	}
+	.p5-img4{
+		bottom: -400px;
+		transition:all 1s linear 1s;
+	}
+}
+.page6{
+	position: relative;
+	background-color: #f8f8f8;
+	.p6-img1,.p6-img4,.p6-img5{
+		.center;
+		opacity: 0;
+		transition:all 1.5s;
+	}
+	.p6-img2,.p6-img3{
+		position: absolute;
+		top: 120px;
+		z-index: 3;
+		opacity: 0;
+		transition:all 100ms linear 1.5s;
+	}
+	.p6-img1{
+		top: 0;
+	}
+	.p6-img2{
+		left: 0;
+	}
+	.p6-img3{
+		right: 0;
+	}
+	.p6-img4{
+		bottom: -380px;
+	}
+	.p6-img5{
+		bottom: 100px;
+		transform:scale(0.5) translateX(-50%);
+		transition:all 300ms cubic-bezier(0.6, 0.35, 0.82, 1.67) 2s;
+	}
+}
+.page-on{
+	background-size: 100% 68%;
+	.p1-img1,.p2-img1,.p3-img1{
+		top: 100px;
+		opacity: 1;
+	}
+	.p1-img2{
+		opacity: 1;
+		left: 60%;
+	}
+	.p2-img2{
+		top: -50%;
+	}
+	.p2-img3{
+		bottom: 5%;
+	}
+	.p3-box img{
+		top:0;
+	}
+	.p3-img2{
+		opacity: 1;
+		bottom: -12%;
+	}
+	.p4-img1{
+		top: 100px;
+		opacity: 1;
+	}
+	.p4-img2{
+		top: 250px;
+		opacity: 1;
+	}
+	.p4-img3{
+		left: 50%;
+		opacity: 1;
+	}
+	.p5-img2{
+		opacity: 1;
+	}
+	.p5-img3{
+		top: 100px;
+		opacity: 1;
+	}
+	.p5-img4{
+		bottom: -100px;
+		opacity: 1;
+	}
+	.p6-img1,.p6-img2,.p6-img3,.p6-img4,.p6-img5{
+		opacity: 1;
+	}
+	.p6-img1{
+		top: 90px;
+	}
+	.p6-img4{
+		bottom: -180px;
+	}
+	.p6-img5{
+		transform:scale(1) translateX(-50%);
+	}
+}
+.page-list{
+	position: fixed;
+	right: 0;
+	top: 50%;
+	transform:translateY(-50%);
+	li{
+		margin: 10px;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background-color: rgba(0,0,0,.3);
+		cursor: pointer;
+		&:first-child{
+			background-color: #379fff;
+		}
+	}
+}
+@media (min-width:768px) and (max-width:992px){
+	.page-on{
+		.p2-img1{width: 50%;}
+		.p2-img2{top: -20%;}
+		.p3-img2{bottom: 0;}
+	}
+}

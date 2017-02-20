@@ -1,0 +1,21 @@
+.page1 {
+  margin-top: 50px;
+}
+.page1 img {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+.page2 {
+  margin-top: 20px;
+  font-size: 0;
+}
+.page2 .p2-img1 {
+  padding: 10px;
+  max-width: 100%;
+}
+.page2 .p2-img2,
+.page2 .p2-img3 {
+  padding: 0;
+  width: 50%;
+}

@@ -1,0 +1,40 @@
+.banner {
+  padding: 100px 0;
+  background: url(../imgs/about/about_honor_1.jpg) no-repeat center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+.banner h2 {
+  margin: 20px 0;
+}
+.banner ul {
+  padding: 0;
+}
+.banner li {
+  margin: 10px 0;
+}
+.score {
+  padding-bottom: 100px;
+  background: url(../imgs/about/hon_bottom.jpg) no-repeat center bottom;
+}
+.score h2 {
+  margin: 50px 0;
+  text-align: center;
+}
+.score ul {
+  margin: 50px auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.score ul li {
+  margin: 30px 0;
+  width: 250px;
+  border-bottom: 1px dashed #379fff;
+}
+.score ul li h4 {
+  font-size: 16px;
+  color: #379fff;
+}

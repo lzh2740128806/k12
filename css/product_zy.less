@@ -1,0 +1,102 @@
+.banner{
+	padding-top: 100px;
+	background: url(../imgs/product/cen_resource_banner.jpg) no-repeat center;
+	background-size: cover;
+	overflow: hidden;
+	text-align: center;
+	ul{
+		margin: 30px auto;
+		width: 80%;
+		display: flex;
+		justify-content:space-around;
+		flex-wrap:wrap;
+		li{
+			width: 180px;
+			i{
+				margin: 20px auto;
+				display: block;
+				width: 95px;
+				height: 95px;
+				background-image: url(../imgs/product/res_banner_icon.png);
+			}
+			span{
+				font-size: 20px;
+			}
+			p{
+				margin-top: 20px;
+				line-height: 2;
+			}
+			&:nth-child(2) i{
+				background-position: -100px 0;
+			}
+			&:nth-child(3) i{
+				background-position: -200px 0;
+			}
+			&:nth-child(4) i{
+				background-position: -300px 0;
+			}
+			&:nth-child(5) i{
+				background-position: -400px 0;
+			}
+		}
+	}
+}
+.resouse{
+	position: relative;
+	padding-top: 50px;
+	background-color: #fbfbfb;
+	overflow: hidden;
+	h2{text-align: center;}
+	img{margin: 50px auto;}
+	li{
+		position: absolute;
+		font-size: 20px;
+	}
+	.tit1{
+		top: 14%;
+		right: 20%;
+	}
+	.tit2{
+		top: 36%;
+		left: 20%;
+	}
+	.tit3{
+		top: 55%;
+		right: 20%;
+	}
+	.tit4{
+		top: 74%;
+		left: 20%;
+	}
+}
+.advance{
+	padding-bottom:200px;
+	text-align: center;
+	img{margin: 0 auto;}
+}
+@media (max-width:768px){
+	.resouse{
+		h2{font-size: 20px;}
+		li{font-size: 16px;}
+		.tit1{
+			top: 20%;
+			right: 10%;
+		}
+		.tit2{
+			top: 40%;
+			left: 10%;
+		}
+		.tit3{
+			top: 55%;
+			right: 10%;
+		}
+		.tit4{
+			top: 72%;
+			left: 10%;
+		}
+	}
+	.advance{
+		padding-bottom: 50px;
+		h2{font-size: 20px;}
+	}
+}
